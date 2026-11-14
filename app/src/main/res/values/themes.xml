@@ -1,9 +1,16 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.WeatherAppProject" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <style name="Base.Theme.WeatherAppProject" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#FFFFFFFF</item>
+        <item name="colorOnPrimary">#FF10161F</item>
+        <item name="android:windowBackground">@color/splash_sky</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
     </style>
 
     <style name="Theme.WeatherAppProject" parent="Base.Theme.WeatherAppProject" />
+
+    <style name="Theme.WeatherAppProject.Search" parent="Base.Theme.WeatherAppProject">
+        <item name="android:windowBackground">@color/search_background</item>
+    </style>
 </resources>

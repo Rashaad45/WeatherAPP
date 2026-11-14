@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/dayDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hairline" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dayName"
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            tools:text="Today" />
+
+        <LinearLayout
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/dayIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:importantForAccessibility="no"
+                tools:src="@drawable/wx_rain" />
+
+            <TextView
+                android:id="@+id/dayProb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:includeFontPadding="false"
+                android:textColor="@color/rain_accent"
+                android:textSize="11sp"
+                android:visibility="gone"
+                tools:text="70%"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dayLow"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:fontFeatureSettings="tnum"
+            android:gravity="end"
+            android:textColor="@color/text_tertiary"
+            android:textSize="16sp"
+            tools:text="21°" />
+
+        <com.example.weatherappproject.ui.TempRangeView
+            android:id="@+id/dayRange"
+            android:layout_width="0dp"
+            android:layout_height="14dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/dayHigh"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:fontFeatureSettings="tnum"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            tools:text="30°" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#CCFFFFFF</color>
+    <color name="text_tertiary">#99FFFFFF</color>
+    <color name="hairline">#1FFFFFFF</color>
+    <color name="rain_accent">#FF9FD4FF</color>
+    <color name="search_background">#FF0E141C</color>
+    <color name="splash_sky">#FF1D2C48</color>
 </resources>

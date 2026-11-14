@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_card"
+    android:minHeight="164dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tileTitle"
+        style="@style/SectionLabel"
+        tools:text="UV index" />
+
+    <TextView
+        android:id="@+id/tileValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-light"
+        android:fontFeatureSettings="tnum"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/tileSubvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_primary"
+        android:textSize="15sp"
+        android:visibility="gone"
+        tools:text="Moderate"
+        tools:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/tileVisual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tileCaption"
+        style="@style/Caption"
+        android:layout_marginTop="8dp"
+        tools:text="Peaks at 7 today. Use sun protection around midday." />
+</LinearLayout>
